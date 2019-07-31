@@ -9,6 +9,15 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "paths": {
+      "app.settings": [ "src/app/app.settings" ],
+      "app.state": [ "src/app/app.state" ],
+      "core": [ "src/app/core" ],
+      "environments": [ "src/environments" ],
+      "shared": [ "src/app/shared" ],
+      "user-core": [ "src/app/user/user-core" ],
+      "user-shared": [ "src/app/user/user-shared" ]
+    },
     "importHelpers": true,
     "target": "es2015",
     "typeRoots": [

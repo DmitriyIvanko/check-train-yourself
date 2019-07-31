@@ -7,20 +7,21 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "check-train-yourselt", ".",
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_61952"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\Projects\cty\check-train-yourselt\"
+		Debug.AspNetCompiler.PhysicalPath = "..\check-train-yourselt\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61952\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_61952"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\Projects\cty\check-train-yourselt\"
+		Release.AspNetCompiler.PhysicalPath = "..\check-train-yourselt\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61952\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "61952"
+		SlnRelativePath = "..\check-train-yourselt\"
 	EndProjectSection
 EndProject
 Global
