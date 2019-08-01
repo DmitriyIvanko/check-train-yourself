@@ -3,21 +3,16 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "check-train-yourselt": {
+    "check-train-yourself": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "cty",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/check-train-yourselt",
+            "outputPath": "dist/check-train-yourself",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,11 +23,10 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
-              "src/styles.scss"
+              "src/assets/scss/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "es5BrowserSupport": true
           },
           "configurations": {
             "production": {
@@ -64,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "check-train-yourselt:build"
+            "browserTarget": "check-train-yourself:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "check-train-yourselt:build:production"
+              "browserTarget": "check-train-yourself:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "check-train-yourselt:build"
+            "browserTarget": "check-train-yourself:build"
           }
         },
         "test": {
@@ -114,16 +108,24 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "check-train-yourselt:serve"
+            "devServerTarget": "check-train-yourself:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "check-train-yourselt:serve:production"
+              "devServerTarget": "check-train-yourself:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "check-train-yourselt"
+  "schematics": {
+    "@ngrx/schematics:component": {
+      "styleext": "scss",
+      "changeDetection": "OnPush"
+    }
+  },
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

@@ -1,7 +1,11 @@
-import { Component } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  selector: 'cty-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

@@ -1,0 +1,35 @@
+@import "_scroll-custom.scss";
+
+.ng-select-selected-item {
+  font-weight: bold;
+}
+
+.ng-value-container {
+  padding-top: 0 !important;
+}
+
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container {
+  flex-wrap: initial !important;
+  padding-left: 10px;
+}
+
+.scroll-host::-webkit-scrollbar {
+  @extend %scrollbar;
+}
+
+.scroll-host::-webkit-scrollbar-thumb {
+  @extend %scrollbar-thumb;
+}
+
+.scroll-style::-webkit-scrollbar-track {
+  @extend %scrollbar-track;
+}
+
+.ng-select.ng-select-focused:not(.ng-select-opened) > .ng-select-container {
+  border-color: $grey_border_form_control;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.ng-select .ng-select-container {
+  min-height: 38px; // like bootstrap 4 form-control;
+}

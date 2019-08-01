@@ -4,5 +4,10 @@
 @import "./_bootstrap-custom.scss";
 @import "~bootstrap/scss/bootstrap";
 
+// @ng-select/ng-select:
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "./_ng-select-custom.scss";
 
-
+// CUSTOM:
+@import "./fonts/_fonts";
+@import "./_app-custom.scss";
