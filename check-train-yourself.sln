@@ -1,27 +1,27 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "check-train-yourselt", ".", "{5124E1C6-8401-4613-BF35-8C7055281C59}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "check-train-yourself", ".", "{5124E1C6-8401-4613-BF35-8C7055281C59}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_61952"
-		Debug.AspNetCompiler.PhysicalPath = "..\check-train-yourselt\"
+		Debug.AspNetCompiler.PhysicalPath = "..\check-train-yourself\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61952\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_61952"
-		Release.AspNetCompiler.PhysicalPath = "..\check-train-yourselt\"
+		Release.AspNetCompiler.PhysicalPath = "..\check-train-yourself\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61952\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "61952"
-		SlnRelativePath = "..\check-train-yourselt\"
+		SlnRelativePath = "..\check-train-yourself\"
 	EndProjectSection
 EndProject
 Global
