@@ -2,12 +2,14 @@
   "name": "check-train-yourselt",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "01_start": "ng serve --open",
+    "01_release": "ng build --prod --stats-json --build-optimizer --vendor-chunk=true --extra-webpack-config webpack.extra.js",
+    "02_bundle-report": "webpack-bundle-analyzer dist/check-train-yourself/stats.json",
+    "03_start": "ng serve --open",
+    "04_e2e": "ng e2e",
+    "05_test": "ng test",
+    "06_lint": "ng lint",
     "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "sass-lint": "sass-lint -c src/sass-lint.yml -v -q"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +29,7 @@
     "bootstrap": "^4.3.1",
     "moment": "^2.24.0",
     "ngx-bootstrap": "^5.1.0",
+    "ngx-build-plus": "^8.1.1",
     "rxjs": "~6.5.2",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

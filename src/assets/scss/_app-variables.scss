@@ -2,8 +2,17 @@
 
 $brand_color: #008000;
 $layout_color: #f8f9fa; // like bootstrap bg-light;
+$grey: #ebebeb;
+$grey_disabled: #c1c1c1;
 $grey_dark: #e1e1e1;
+$secondary_blue_color: #1586ff;
 $white: #fff;
+$marker_selected_light_green: #0aff0a;
+$marker_supplier_green: #008000;
 
 // library colors:
 $grey_border_form_control: #ced4da;
+
+// variables for consistency:
+$border_radius: 5px;
+$border_selected: 3px;
