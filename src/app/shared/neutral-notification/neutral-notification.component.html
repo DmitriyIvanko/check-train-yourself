@@ -1,0 +1,12 @@
+<div *ngFor="let notification of notificationList;  let i = index;  trackBy: identifyNotificationList">
+  <div class="notification-wrapper notice-error">
+    <div class="notification-title">
+      {{ notification.title }}
+    </div>
+    <div class="clearfix"></div>
+    <div class="notification-txt">
+      {{ notification.message }}
+    </div>
+    <button class="notification-btn-error cursor-pointer" (click)="close(i)">ОК</button>
+  </div>
+</div>

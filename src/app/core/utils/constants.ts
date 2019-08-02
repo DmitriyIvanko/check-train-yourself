@@ -1,4 +1,6 @@
 export const COMMA_SEPARATOR = ',';
+export const DELAY_250_MS = 250;
+export const DELAY_500_MS = 500;
 export const HUNDRED_PERCENT = 100;
 export const ISO_DATE_FORMAT = 'YYYY-MM-DD';
 export const LEFT_ROUND_BRACKET = '(';

@@ -7,6 +7,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { CoreModule } from 'core';
 import { environment } from 'environments';
+import { SharedModule } from 'shared';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -31,6 +32,7 @@ import { AppComponent } from './app.component';
     }),
     environment.production ? [] : StoreDevtoolsModule.instrument(),
     EffectsModule.forRoot([]),
+    SharedModule,
     AppRoutingModule,
   ],
 })

@@ -1,0 +1,66 @@
+@import "../../../assets/scss/_app-variables.scss";
+
+:host {
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 18px;
+  padding-left: 30px;
+  position: relative;
+}
+
+:host::before {
+  background-color: $white;
+  border: 1px solid $brand_color;
+  border-radius: 20%;
+  content: "";
+  display: block;
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 20px;
+}
+
+:host.checked {
+  &::before {
+    border: 1px solid $brand_color;
+    background: $brand_color;
+  }
+
+  &::after {
+    border: solid $white;
+    border-width: 0 3px 3px 0;
+    content: "";
+    display: block;
+    left: 12px;
+    height: 10px;
+    position: absolute;
+    top: 8px;
+    transform: rotate(45deg);
+    width: 5px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+:host:hover {
+  &::before {
+    border: 1px solid $brand_color;
+  }
+}
+
+:host.disabled {
+  border-color: $grey_disabled;
+  cursor: not-allowed;
+}
+
+:host.disabled::before,
+:host.disabled:hover::before {
+  border: 1px solid $grey_disabled;
+  background: $grey_disabled;
+  color: $grey_disabled;
+}
+
+:host.disabled::after {
+  background: $grey_disabled;
+}

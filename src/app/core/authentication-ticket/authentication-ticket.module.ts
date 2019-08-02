@@ -8,7 +8,6 @@ import * as fromAuthenticationTicket from './authentication-ticket.reducer';
 
 @NgModule({
   imports: [
-    // CommonModule,
     StoreModule.forFeature(fromAuthenticationTicket.REDUCER_KEY, fromAuthenticationTicket.reducer),
     EffectsModule.forFeature([AuthenticationTicketEffects]),
   ],
