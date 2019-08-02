@@ -18,6 +18,13 @@ const COMPONENT_LIST = [
 
 @NgModule({
   declarations: COMPONENT_LIST,
-  exports: COMPONENT_LIST,
+  exports: [
+    CommonModule,
+    FormsModule,
+    ...COMPONENT_LIST],
+  imports: [
+    CommonModule,
+    FormsModule,
+  ],
 })
 export class SharedModule { }

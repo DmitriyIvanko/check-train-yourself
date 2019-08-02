@@ -1,3 +1,7 @@
+export {
+  SignInUserAction,
+  fromAuthenticationTicket,
+} from './authentication-ticket';
 export { CoreModule } from './core.module';
 export {
   NotificationModel,
