@@ -7,14 +7,7 @@ import {
 import { LandingComponent } from './landing.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: 'sign-in', pathMatch: 'full' },
   {
-    // children: [
-    //   {
-    //     loadChildren: () => import('./sign-in/sign-in.module').then((m) => m.SignInModule),
-    //     path: 'sign-in',
-    //   },
-    // ],
     component: LandingComponent,
     path: '',
   },
