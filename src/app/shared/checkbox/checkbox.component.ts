@@ -5,7 +5,7 @@ import {
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
-  selector: 'alx-checkbox',
+  selector: 'cty-checkbox',
   styleUrls: ['./checkbox.component.scss'],
   templateUrl: './checkbox.component.html',
 })

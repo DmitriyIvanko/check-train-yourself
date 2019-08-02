@@ -14,7 +14,7 @@ import {
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
-  selector: 'alx-neutral-notification',
+  selector: 'cty-neutral-notification',
   styleUrls: ['./neutral-notification.component.scss'],
   templateUrl: './neutral-notification.component.html',
 })

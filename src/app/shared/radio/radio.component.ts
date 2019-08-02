@@ -5,7 +5,7 @@ import {
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
-  selector: 'alx-radio',
+  selector: 'cty-radio',
   styleUrls: ['./radio.component.scss'],
   templateUrl: './radio.component.html',
 })

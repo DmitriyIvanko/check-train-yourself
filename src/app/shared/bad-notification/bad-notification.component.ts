@@ -14,7 +14,7 @@ import {
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
-  selector: 'alx-bad-notification',
+  selector: 'cty-bad-notification',
   styleUrls: ['./bad-notification.component.scss'],
   templateUrl: './bad-notification.component.html',
 })

@@ -9,7 +9,7 @@ import {
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
-  selector: 'alx-switcher',
+  selector: 'cty-switcher',
   styleUrls: ['./switcher.component.scss'],
   templateUrl: './switcher.component.html',
 })
